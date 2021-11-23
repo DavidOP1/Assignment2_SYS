@@ -2,9 +2,9 @@ CC=gcc
 OBJECTS_MAIN=main.o
 FLAGS= -Wall -g
 
-all: prog
-prog: $(OBJECTS_MAIN) my_mat.o 
-	$(CC) $(FLAGS) $(OBJECTS_MAIN) my_mat.o -o prog 
+all: connections
+connections: $(OBJECTS_MAIN) my_mat.o 
+	$(CC) $(FLAGS) $(OBJECTS_MAIN) my_mat.o -o connections 
 my_mat.o: my_mat.c my_mat.h
 	$(CC) $(FLAGS) -c my_mat.c
 main.o: main.c my_mat.h
