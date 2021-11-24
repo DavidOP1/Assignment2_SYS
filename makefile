@@ -13,4 +13,4 @@ main.o: main.c my_mat.h
 	$(CC) $(FLAGS) -c main.c 
 .PHONY: clean all
 clean:
-	rm -f *.o  connections libmy_mat.a
+	rm -f *.o  connections libmy_mata.a
