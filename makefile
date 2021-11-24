@@ -6,7 +6,7 @@ all: connections my_mat.o main.o
 connections:my_mat.o main.o
 	$(CC) $(FLAGS)   -o connections  $(OBJECTS_MAIN) my_mat.o
 my_mat.o: my_mat.c my_mat.h
-	$(CC) $(FLAGS) -c my_mat.c
+	$(CC) $(FLAGS) -c my_mat.c my_mat.h
 main.o: main.c my_mat.h 
 	$(CC) $(FLAGS) -c main.c 
 .PHONY: clean all
